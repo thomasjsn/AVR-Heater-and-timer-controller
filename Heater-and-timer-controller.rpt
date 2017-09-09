@@ -1,0 +1,339 @@
+Report       : Heater-and-timer-controller
+Date         : 09-09-2017
+Time         : 12:51:37
+
+Compiler     : BASCOM-AVR LIBRARY V 2.0.7.8
+Processor    : 90S2313
+SRAM         : 80 hex
+EEPROM       : 80 hex
+ROMSIZE      : 800 hex
+
+ROMIMAGE     : 5AC hex  -> Will fit into ROM
+ROMIMAGE     :  1452 dec
+FLASH USED   :  70  %
+BAUD         : 9600 Baud
+XTAL         : 4000000 Hz
+BAUD error   : 0.16%
+
+Stack start  : DF hex
+Stack size   : 28 hex
+S-Stacksize  : 10 hex
+S-Stackstart : B8 hex
+Framesize    : 20 hex
+Framestart   : 88 hex
+Space left   :  24  dec
+
+LCD DB7      : PORTB.7
+LCD DB6      : PORTB.6
+LCD DB5      : PORTB.5
+LCD DB4      : PORTB.4
+LCD E        : PORTB.3
+LCD RS       : PORTB.2
+LCD mode     :  4  bit
+
+--------------------------------------------------------------------------------
+Variable                         Type            Address(hex)   Address(dec)
+--------------------------------------------------------------------------------
+TCNT1                            Word              004C          76 
+OCR1A                            Word              004A          74 
+ICR1                             Word              0044          68 
+TIMER1                           Word              004C          76 
+COMPARE1A                        Word              004A          74 
+CAPTURE1                         Word              0044          68 
+HWSTACK                          Word              005D          93 
+SWSTACK                          Word              001C          28 
+FRAME                            Word              0004          4 
+R0                                                 0000          0 
+R1                                                 0001          1 
+R2                                                 0002          2 
+R3                                                 0003          3 
+R4                                                 0004          4 
+R5                                                 0005          5 
+R6                                                 0006          6 
+R7                                                 0007          7 
+R8                                                 0008          8 
+R9                                                 0009          9 
+R10                                                000A          10 
+R11                                                000B          11 
+R12                                                000C          12 
+R13                                                000D          13 
+R14                                                000E          14 
+R15                                                000F          15 
+R16                                                0010          16 
+R17                                                0011          17 
+R18                                                0012          18 
+R19                                                0013          19 
+R20                                                0014          20 
+R21                                                0015          21 
+R22                                                0016          22 
+R23                                                0017          23 
+R24                                                0018          24 
+R25                                                0019          25 
+R26                                                001A          26 
+R27                                                001B          27 
+R28                                                001C          28 
+R29                                                001D          29 
+R30                                                001E          30 
+R31                                                001F          31 
+COUNTER1                         Word              004C          76 
+TIMER1                           Word              004C          76 
+CAPTURE1                         Word              0044          68 
+COMPARE1A                        Word              004A          74 
+PWM1A                            Word              004A          74 
+COMPARE1                         Word              004A          74 
+ERR                              Bit [2]           0006          6 
+A                                Byte              0060          96 
+LIFESIGNAL                       Integer           0061          97 
+DORAAPEN                         Integer           0063          99 
+PRETIMER                         Integer           0065          101 
+OVNDIODE                         Integer           0067          103 
+POSTTIMER                        Integer           0069          105 
+OVNDIODE2                        Integer           006B          107 
+SERVERTIMER                      Integer           006D          109 
+
+--------------------------------------------------------------------------------
+Constant                         Value
+--------------------------------------------------------------------------------
+SREG                             &H3F
+SPL                              &H3D
+GIMSK                            &H3B
+GIFR                             &H3A
+TIMSK                            &H39
+TIFR                             &H38
+MCUCR                            &H35
+TCCR0                            &H33
+TCNT0                            &H32
+COUNTER0                         &H32
+TIMER0                           &H32
+TCCR1A                           &H2F
+TCCR1B                           &H2E
+TCNT1H                           &H2D
+TCNT1L                           &H2C
+OCR1AH                           &H2B
+OCR1AL                           &H2A
+ICR1H                            &H25
+ICR1L                            &H24
+WDTCR                            &H21
+EEAR                             &H1E
+EEARL                            &H1E
+EEDR                             &H1D
+EECR                             &H1C
+PORTB                            &H18
+DDRB                             &H17
+PINB                             &H16
+PORTD                            &H12
+DDRD                             &H11
+PIND                             &H10
+UDR                              &H0C
+USR                              &H0B
+UCR                              &H0A
+UBRR                             &H09
+ACSR                             &H08
+_ROMSIZE                         2048
+SP7                              7
+SP6                              6
+SP5                              5
+SP4                              4
+SP3                              3
+SP2                              2
+SP1                              1
+SP0                              0
+INT1                             7
+INT0                             6
+INTF1                            7
+INTF0                            6
+TOIE1                            7
+OCIE1A                           6
+TICIE1                           3
+TOIE0                            1
+TOV1                             7
+OCF1A                            6
+ICF1                             3
+TOV0                             1
+SE                               5
+SM                               4
+ISC11                            3
+ISC10                            2
+ISC01                            1
+ISC00                            0
+CS02                             2
+CS01                             1
+CS00                             0
+COM1A1                           7
+COM1A0                           6
+PWM11                            1
+PWM10                            0
+ICNC1                            7
+ICES1                            6
+CTC1                             3
+CS12                             2
+CS11                             1
+CS10                             0
+WDTOE                            4
+WDE                              3
+WDP2                             2
+WDP1                             1
+WDP0                             0
+EEMWE                            2
+EEWE                             1
+EERE                             0
+PB7                              7
+PB6                              6
+PB5                              5
+PB4                              4
+PB3                              3
+PB2                              2
+PB1                              1
+PB0                              0
+DDB7                             7
+DDB6                             6
+DDB5                             5
+DDB4                             4
+DDB3                             3
+DDB2                             2
+DDB1                             1
+DDB0                             0
+PINB7                            7
+PINB6                            6
+PINB5                            5
+PINB4                            4
+PINB3                            3
+PINB2                            2
+PINB1                            1
+PINB0                            0
+PD6                              6
+PD5                              5
+PD4                              4
+PD3                              3
+PD2                              2
+PD1                              1
+PD0                              0
+DDD6                             6
+DDD5                             5
+DDD4                             4
+DDD3                             3
+DDD2                             2
+DDD1                             1
+DDD0                             0
+PIND6                            6
+PIND5                            5
+PIND4                            4
+PIND3                            3
+PIND2                            2
+PIND1                            1
+PIND0                            0
+RXC                              7
+TXC                              6
+UDRE                             5
+FE                               4
+OR                               3
+RXCIE                            7
+TXCIE                            6
+UDRIE                            5
+RXEN                             4
+TXEN                             3
+CHR9                             2
+RXB8                             1
+TXB8                             0
+ACD                              7
+ACO                              5
+ACI                              4
+ACIE                             3
+ACIC                             2
+ACIS1                            1
+ACIS0                            0
+_DATE_FORMAT                     0
+_DATE_SEPARATOR                  92
+_GSTRBUF                         136
+_DECIMALPOINT                    46
+_RTSCTS                          0
+_RTSCTS1                         0
+_RTSCTS3                         0
+_RTSCTS4                         0
+_RTSCTS5                         0
+_RTSCTS6                         0
+_RTSCTS7                         0
+_RTSCTS8                         0
+_CHIP                            0
+_RAMSIZE                         128
+_ERAMSIZE                        128
+_SIM                             0
+_HUGE                            0
+_BASE                            1
+_XTAL                            4000000
+_BUILD                           20781
+_COMPILER                        90
+_HWMUL                           0
+_DOSFILEWRITE                    0
+_DOSDIRWRITE                     0
+_1WEXT                           0
+_ADC_REFMODEL                    0
+_UARTS                           1
+_HWSTACKSTART                    223
+_TIMEOUT                         0
+_PRDWORD                         0
+_PBIN_EXTENDED                   0
+_BIGSTRINGS                      0
+_FPROTECT                        0
+_HWSTACK_LOW                     &H00B7
+_SWSTACK_LOW                     &H00A8
+_FRAME_HIGH                      &H00A9
+_XMEGA                           0
+CBITINFINITY                     0
+CMBITINFINITY                    1
+CBITZERO                         1
+CMBITZERO                        2
+CBITNAN                          2
+CMBITNAN                         4
+CBITNANIFINF                     3
+CMBITNANIFINF                    8
+CBITNANIFMINUS                   4
+CMBITNANIFMINUS                  16
+CBITSIGN                         7
+CMBITSIGN                        128
+CEXPADDOFFSET                    0
+CEXPSUBOFFSET                    12
+CEXPMULOFFSET                    24
+CEXPDIVOFFSET                    36
+
+
+--------------------------------------------------------------------------------
+Warnings:
+--------------------------------------------------------------------------------
+TCNT1                            not used
+OCR1A                            not used
+ICR1                             not used
+R0                               not used
+R1                               not used
+R2                               not used
+R3                               not used
+R4                               not used
+R5                               not used
+R6                               not used
+R7                               not used
+R8                               not used
+R9                               not used
+R10                              not used
+R11                              not used
+R12                              not used
+R13                              not used
+R14                              not used
+R15                              not used
+R16                              not used
+R17                              not used
+R18                              not used
+R19                              not used
+R20                              not used
+R21                              not used
+R22                              not used
+R23                              not used
+R24                              not used
+R25                              not used
+R26                              not used
+R27                              not used
+R28                              not used
+R29                              not used
+R30                              not used
+R31                              not used
+COMPARE1                         not used
+

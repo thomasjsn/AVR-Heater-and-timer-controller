@@ -1,5 +1,5 @@
 '--------------------------------------------------------------
-'                   Thomas Jensen | uCtrl.io
+'                   Thomas Jensen | stdout.no
 '--------------------------------------------------------------
 '  file: AVR_HEATER_AND_TIMER_CONTROLLER_v1.0
 '  date: 23/12/2006
